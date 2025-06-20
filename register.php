@@ -7,9 +7,9 @@ $registerError = '';
 $loginError = '';
 
 // --- Replace these with your actual Google Cloud Project ID and API Key ---
-define('GOOGLE_CLOUD_PROJECT_ID', 'my-project-4711-1749199143487');
-define('GOOGLE_CLOUD_API_KEY', 'AIzaSyBaiP1ikRHAgCKfPVLFijq5QAhYtALjh4Q');
-$RECAPTCHA_SITE_KEY = '6LcipFcrAAAAALxKHPsC2F3ONL4blDcqL2vyPf5M';
+define('GOOGLE_CLOUD_PROJECT_ID', 'ENTER PROJECT ID');
+define('GOOGLE_CLOUD_API_KEY', 'ENTER API KEY');
+$RECAPTCHA_SITE_KEY = 'ENTER SITE KEY';
 
 function verifyRecaptchaEnterprise($token, $siteKey, $action) {
     $url = "https://recaptchaenterprise.googleapis.com/v1/projects/" . GOOGLE_CLOUD_PROJECT_ID . "/assessments?key=" . GOOGLE_CLOUD_API_KEY;
