@@ -22,10 +22,10 @@ if (!isset($_SESSION['username'])) {
 // Get username for display, ensuring it's safe for HTML output
 $display_username = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : 'Guest';
 
-$servername = "sql204.infinityfree.com";
-$db_username = "if0_39212989"; // Renamed to avoid conflict with $_SESSION['username']
-$password = "gs4cj2uRQZwyN";
-$dbname = "if0_39212989_locations";
+$servername = 'localhost';
+$db_username = 'root'; // Renamed to avoid conflict with session $display_username
+$password = '';
+$dbname = 'tampering';
 
 // Create database connection
 $conn = new mysqli($servername, $db_username, $password, $dbname);
