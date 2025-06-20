@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fff8;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Centered Container for Tile and Map --- */
+.centered-container {
+  width: 100%;
+  max-width: 1200px;   /* Or your preferred max width */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Dashboard Tile --- */
+.dashboard-main-tile {
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(30, 144, 255, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 36px;
+  margin-bottom: 32px;
+  gap: 16px;
+}
+
+/* --- TNEB Logo (outside tile, centered) --- */
+.tneb-logo-large {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  height: 120px;
+  width: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background: #fff;
+  padding: 8px 15px;
+  object-fit: contain;
+}
+
+/* --- Map --- */
+#map {
+  width: 100%;
+  max-width: 1200px;
+  height: 480px;
+  margin: 0 auto 40px auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px #1e90ff22;
+  display: block;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .centered-container,
+  .dashboard-main-tile {
+    max-width: 98vw;
+    padding: 8px;
+  }
+  .dashboard-main-tile {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 12px;
+    padding: 12px;
+  }
+  .tneb-logo-large {
+    height: 70px;
+    margin-bottom: 12px;
+  }
+  #map {
+    height: 280px;
+    max-width: 98vw;
+  }
+}
+
+
+
