@@ -23,10 +23,10 @@ $display_username = htmlspecialchars($_SESSION['username']);
 
 // Get the username for display
 $display_username = htmlspecialchars($_SESSION['username']);
-$servername = "sql204.infinityfree.com";
-$username_db = "if0_39212989"; // Renamed to avoid conflict with $_SESSION['username']
-$password_db = "gs4cj2uRQZwyN";
-$dbname = "if0_39212989_tampering";
+$servername = 'localhost';
+$db_username = 'root'; // Renamed to avoid conflict with session $display_username
+$password = '';
+$dbname = 'tampering';
 
 // Database connection
 $conn = new mysqli($servername, $username_db, $password_db, $dbname);
