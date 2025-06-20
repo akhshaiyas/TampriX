@@ -544,6 +544,6 @@ $conn->close();
         autoCenter();
     }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-ntkzWK3RNvjIhGVZNpzQAGgkHx2zeDc&callback=initMap"></script>
+    <script async defer src="Put in Google MAP API key"></script>
 </body>
 </html>
