@@ -1,10 +1,10 @@
 <?php
 
 // --- Database Configuration ---
-$servername = "sql204.infinityfree.com";
-$username_db = "if0_39212989";
-$password_db = "gs4cj2uRQZwyN"; // Replace with your actual vPanel password
-$dbname = "if0_39212989_tampering"; /
+$servername = 'localhost';
+$db_username = 'root'; // Renamed to avoid conflict with session $display_username
+$password = '';
+$dbname = 'tampering';
 
 // Create a new database connection
 $conn = new mysqli($servername, $username, $password, $dbname);
